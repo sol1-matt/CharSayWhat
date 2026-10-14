@@ -28,7 +28,8 @@ charsaywhat -- -s               # analyse text that looks like a switch
 
 ## Building
 
-Binaries are written to `bin/` (not committed).
+Binaries are written to `bin/`. A prebuilt Windows binary is committed at
+`bin/charsaywhat.exe`; the Linux binary is not.
 
 **Windows** (PowerShell):
 

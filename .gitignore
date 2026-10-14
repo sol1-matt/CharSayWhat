@@ -1,3 +1,4 @@
-# Build output lives in bin/ and is not committed.
+# Build output lives in bin/. Only the Windows binary is committed.
 /bin/*
 !/bin/.gitkeep
+!/bin/charsaywhat.exe

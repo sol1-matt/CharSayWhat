@@ -74,7 +74,7 @@ build.sh              Linux build script          -> bin/charsaywhat (+ Windows 
 make_ico.ps1          generates charsaywhat.ico from charsaywhat.png
 charsaywhat.png/.ico  icon source / generated icon (committed)
 rsrc_windows_amd64.syso   compiled icon resource (generated, committed)
-bin/                  build output; contents are gitignored (see §8)
+bin/                  build output; gitignored except charsaywhat.exe (see §8)
 ```
 
 ### The build-tag pattern
@@ -315,8 +315,12 @@ colour block in `htmlPage`, `symbolNames` and `codeNames` (enforced by
 
 ## 8. Building and running
 
-All build output goes to **`bin/`**. Its contents are gitignored (only
-`bin/.gitkeep` is tracked) — binaries are **not** committed any more.
+All build output goes to **`bin/`**, which is gitignored **except
+`bin/charsaywhat.exe`** (user decision, 2026-10-14). The Windows binary is
+committed so Windows users can grab it without a Go toolchain; when you change
+behaviour, rebuild it (`./build.sh windows` works from Linux) and commit it
+with the source. The Linux binary stays uncommitted — it depends on system
+libraries and is built per machine.
 
 ### Windows
 
