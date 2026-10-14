@@ -2,4 +2,4 @@
 
 package main
 
-func attachConsole() {}
+func prepareGUI() bool { return true }

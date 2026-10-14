@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=CharSayWhat
+Comment=Show exactly which characters are in a string
+Exec=charsaywhat
+Icon=charsaywhat
+Terminal=false
+Categories=Utility;
+StartupWMClass=charsaywhat
